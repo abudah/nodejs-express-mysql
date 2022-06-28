@@ -31,7 +31,7 @@ Tutorial.findById = (id, result) => {
     }
     if (res.length) {
       console.log("found tutorial: ", res[0]);
-    //   result(null, res[0]);
+      result(null, res[0]);
       return;
     }
     // not found Tutorial with the id
